@@ -1,30 +1,27 @@
 package com.accesshq.ui;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NotFoundException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class PlanetTile {
 
-    private WebDriver driver;
+    private WebElement thisElement;
 
-    public PlanetTile(WebDriver driver) {
-        this.driver = driver;
+    public PlanetTile(WebElement ele) {
+        this.thisElement = ele;
     }
 
-    private WebElement getPlanetTile(String planetName) {
-        var planetTiles = driver.findElements(By.className("planet"));
-        for (WebElement tile : planetTiles) {
-            var thisElement = tile.findElement(By.cssSelector("h2"));
-            if (thisElement.getText().equalsIgnoreCase(planetName)) {
-                return tile;
-            }
-        }
-        throw new NotFoundException("planet tile not found");
+    public String getName() {
+        return thisElement.findElement(By.className("name")).getText();
     }
 
-    public String getDistance(String planet) {
-        return getPlanetTile(planet).findElement(By.className("distance")).getText();
+    public String getDistance() {
+        return thisElement.findElement(By.className("distance")).getText();
     }
+
+    public String getRadius() {
+        return thisElement.findElement(By.className("radius")).getText();
+    }
+
+
 }

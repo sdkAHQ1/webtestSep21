@@ -1,5 +1,7 @@
 package com.accesshq.tests;
 
+import com.accesshq.strategies.NameMatch;
+import com.accesshq.strategies.RadiusMatch;
 import com.accesshq.ui.FormsPage;
 import com.accesshq.ui.HomePage;
 
@@ -82,12 +84,18 @@ public class WebTestSuite {
     {
         // arrange - click on planets menu item to navigate to planets page
         new HomePage(driver).navigateToPlanetsPage();
-        var planetTile = new PlanetTile(driver);
+        var planetsPage = new PlanetsPage(driver);
 
-        String distance = planetTile.getDistance("Jupiter");
+        PlanetTile planet = planetsPage.getPlanetTile(new NameMatch("Jupiter"));
 
-        // assert - error messages are correct
-        Assertions.assertEquals("778,500,000 km", distance);
+        // assert - distance to jupiter
+        Assertions.assertEquals("778,500,000 km", planet.getDistance());
+
+        // act - find planet tile by radius
+        planet = planetsPage.getPlanetTile(new RadiusMatch("69,911 km"));
+
+        // assert - name is jupiter
+        Assertions.assertEquals("Jupiter", planet.getName());
     }
 
 

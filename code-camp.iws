@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add Forms tests, refactor navigation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add Ui model, JupiterDistanceTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,6 +262,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.accesshq.strategies" />
       <recent name="com.accesshq.ui" />
     </key>
   </component>
@@ -472,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632968606926</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Ui model, JupiterDistanceTest">
+      <created>1632983254983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632983254984</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -526,7 +535,8 @@
     <MESSAGE value="initial WebTestSuite demo test" />
     <MESSAGE value="added Moving Button Test" />
     <MESSAGE value="add Forms tests, refactor navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Forms tests, refactor navigation" />
+    <MESSAGE value="add Ui model, JupiterDistanceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Ui model, JupiterDistanceTest" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

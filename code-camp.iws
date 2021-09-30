@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="added Moving Button Test">
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add Forms tests, refactor navigation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" afterDir="false" />
@@ -255,7 +259,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="JUnit.WebTestSuite.FormsErrorMsgTest">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.accesshq.ui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WebTestSuite.JupiterDistanceTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -334,6 +343,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTestSuite.JupiterDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="METHOD_NAME" value="JupiterDistanceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTestSuite.TableQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="METHOD_NAME" value="TableQuantityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -347,9 +398,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTestSuite.JupiterDistanceTest" />
+        <item itemvalue="JUnit.WebTestSuite" />
+        <item itemvalue="JUnit.WebTestSuite.TableQuantityTest" />
         <item itemvalue="JUnit.WebTestSuite.FormsErrorMsgTest" />
         <item itemvalue="JUnit.WebTestSuite.FormsSubmitPopUpTest" />
-        <item itemvalue="JUnit.WebTestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632890252711</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Forms tests, refactor navigation">
+      <created>1632968606926</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632968606926</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -465,7 +525,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial WebTestSuite demo test" />
     <MESSAGE value="added Moving Button Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Moving Button Test" />
+    <MESSAGE value="add Forms tests, refactor navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Forms tests, refactor navigation" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -518,5 +579,10 @@
   </component>
   <component name="WebViewSettings">
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code_camp$WebTestSuite.ic" NAME="WebTestSuite Coverage Results" MODIFIED="1632976072345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.accesshq.tests.*</FILTER>
+    </SUITE>
   </component>
 </project>

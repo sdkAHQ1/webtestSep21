@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="initial WebTestSuite demo test">
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="added Moving Button Test">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" afterDir="false" />
@@ -255,7 +255,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WebTestSuite.FormsErrorMsgTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -292,6 +292,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTestSuite.FormsErrorMsgTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="METHOD_NAME" value="FormsErrorMsgTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTestSuite.FormsSubmitPopUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="METHOD_NAME" value="FormsSubmitPopUpTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -305,6 +347,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTestSuite.FormsErrorMsgTest" />
+        <item itemvalue="JUnit.WebTestSuite.FormsSubmitPopUpTest" />
         <item itemvalue="JUnit.WebTestSuite" />
       </list>
     </recent_temporary>
@@ -361,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632874627505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added Moving Button Test">
+      <created>1632890252711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632890252711</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -413,7 +464,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial WebTestSuite demo test" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial WebTestSuite demo test" />
+    <MESSAGE value="added Moving Button Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Moving Button Test" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

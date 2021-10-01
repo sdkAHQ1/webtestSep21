@@ -19,6 +19,12 @@ public class PlanetTile {
         return thisElement.findElement(By.className("distance")).getText();
     }
 
+    public double getDistanceAsNumber() {
+        String strD = thisElement.findElement(By.className("distance")).getText();
+        String distance = strD.substring(0, strD.length() - 3).replaceAll(",","");
+        return Double.parseDouble(distance);
+    }
+
     public String getRadius() {
         return thisElement.findElement(By.className("radius")).getText();
     }

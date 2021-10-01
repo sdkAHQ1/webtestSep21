@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add Ui model, JupiterDistanceTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" afterDir="false" />
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
@@ -258,6 +255,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -266,7 +264,7 @@
       <recent name="com.accesshq.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTestSuite.JupiterDistanceTest">
+  <component name="RunManager" selected="JUnit.WebTestSuite.NeptuneFurthestDistanceTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -324,27 +322,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.FormsSubmitPopUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
-      <option name="METHOD_NAME" value="FormsSubmitPopUpTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebTestSuite.JupiterDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
@@ -356,6 +333,27 @@
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
       <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
       <option name="METHOD_NAME" value="JupiterDistanceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTestSuite.NeptuneFurthestDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="METHOD_NAME" value="NeptuneFurthestDistanceTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -400,11 +398,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTestSuite.NeptuneFurthestDistanceTest" />
         <item itemvalue="JUnit.WebTestSuite.JupiterDistanceTest" />
         <item itemvalue="JUnit.WebTestSuite" />
         <item itemvalue="JUnit.WebTestSuite.TableQuantityTest" />
         <item itemvalue="JUnit.WebTestSuite.FormsErrorMsgTest" />
-        <item itemvalue="JUnit.WebTestSuite.FormsSubmitPopUpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632983254984</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius">
+      <created>1633046361916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633046361916</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -536,7 +541,8 @@
     <MESSAGE value="added Moving Button Test" />
     <MESSAGE value="add Forms tests, refactor navigation" />
     <MESSAGE value="add Ui model, JupiterDistanceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Ui model, JupiterDistanceTest" />
+    <MESSAGE value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
+    <option name="LAST_COMMIT_MESSAGE" value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

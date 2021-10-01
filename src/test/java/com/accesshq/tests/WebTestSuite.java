@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WebTestSuite {
@@ -86,16 +87,54 @@ public class WebTestSuite {
         new HomePage(driver).navigateToPlanetsPage();
         var planetsPage = new PlanetsPage(driver);
 
+        // act - find planet tile by name
         PlanetTile planet = planetsPage.getPlanetTile(new NameMatch("Jupiter"));
 
-        // assert - distance to jupiter
+        // lambda predicate
+        PlanetTile planet2 = planetsPage.getPlanetTilePred(planetTile -> planetTile.getName().contains("Jupiter"));
+
+        // assert - distance to jupiter is
         Assertions.assertEquals("778,500,000 km", planet.getDistance());
+        Assertions.assertEquals("778,500,000 km", planet2.getDistance());
 
         // act - find planet tile by radius
         planet = planetsPage.getPlanetTile(new RadiusMatch("69,911 km"));
 
+        // lambda predicate
+        planet2 = planetsPage.getPlanetTilePred(planetTile -> planetTile.getRadius().contains("69,911 km"));
+
         // assert - name is jupiter
         Assertions.assertEquals("Jupiter", planet.getName());
+        Assertions.assertEquals("Jupiter", planet2.getName());
+    }
+
+    @Test
+    public void NeptuneFurthestDistanceTest()
+    {
+        // arrange - click on planets menu item to navigate to planets page
+        new HomePage(driver).navigateToPlanetsPage();
+        var planetsPage = new PlanetsPage(driver);
+
+        // act - get the distance of all planets
+        double max = 0;
+        double distance = 0;
+        var planetTiles = driver.findElements(By.className("planet"));
+        for (WebElement tile : planetTiles) {
+            PlanetTile planet = new PlanetTile(tile);
+            distance = planet.getDistanceAsNumber();
+            if (distance > max)
+            {
+                max = distance;
+            }
+        }
+
+        double furthest = max;
+        PlanetTile furthestPlanet = planetsPage.getPlanetTilePred(
+                planetTile -> planetTile.getDistanceAsNumber()== furthest);
+
+        // assert that planet with furthest distance is neptune
+        Assertions.assertEquals("Neptune", furthestPlanet.getName());
+
     }
 
 

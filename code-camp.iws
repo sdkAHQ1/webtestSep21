@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius">
-      <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" afterDir="false" />
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add neptune is furthest test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/DistanceMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -486,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633046361916</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add neptune is furthest test">
+      <created>1633057316983</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633057316983</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -542,7 +545,8 @@
     <MESSAGE value="add Forms tests, refactor navigation" />
     <MESSAGE value="add Ui model, JupiterDistanceTest" />
     <MESSAGE value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
-    <option name="LAST_COMMIT_MESSAGE" value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
+    <MESSAGE value="add neptune is furthest test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add neptune is furthest test" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

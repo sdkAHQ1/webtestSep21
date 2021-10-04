@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add distanceMatch matching strategy">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-camp.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.ipr" afterDir="false" />
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,6 +261,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -272,7 +276,7 @@
       <recent name="com.accesshq.ui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WebTests">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -508,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633057547150</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml">
+      <created>1633316081206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633316081206</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -566,7 +577,8 @@
     <MESSAGE value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
     <MESSAGE value="add neptune is furthest test" />
     <MESSAGE value="add distanceMatch matching strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add distanceMatch matching strategy" />
+    <MESSAGE value="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

@@ -4,13 +4,18 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class BaseTestSuite {
-    protected WebDriver driver;
+    protected RemoteWebDriver driver;
 
     @BeforeEach
-    public void Setup() {
-        driver = new ChromeDriver();
+    public void Setup() throws MalformedURLException {
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
         // driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://d18u5zoaatmpxx.cloudfront.net/#/");
         driver.manage().window().maximize();

@@ -35,6 +35,15 @@ public class WebTests extends BaseTestSuite {
     }
 
     @Test
+    public void JetBrainsTest()
+    {
+        // arrange - we've setup the jetbrains code with me
+
+        // act - I'm
+
+    }
+
+    @Test
     public void FormsSubmitPopUpTest()
     {
         // arrange - click on forms menu item to navigate to Forms page

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add neptune is furthest test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/DistanceMatch.java" afterDir="false" />
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="add distanceMatch matching strategy">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-camp.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,6 +234,9 @@
     <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1yn2os71zyjhEDffmK1b2WMiusM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewSettings">
     <navigator currentView="ProjectPane" flattenPackages="false" showMembers="false" showStructure="false" autoscrollToSource="false" splitterProportion="0.5" />
     <view id="ProjectPane">
@@ -253,14 +260,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.accesshq.tests" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.accesshq.tests" />
       <recent name="com.accesshq.strategies" />
       <recent name="com.accesshq.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTestSuite.NeptuneFurthestDistanceTest">
+  <component name="RunManager">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -277,7 +289,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
@@ -286,7 +298,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -297,7 +309,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.FormsErrorMsgTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests.FormsErrorMsgTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
@@ -306,7 +318,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="METHOD_NAME" value="FormsErrorMsgTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -318,7 +330,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.JupiterDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests.JupiterDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
@@ -327,7 +339,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="METHOD_NAME" value="JupiterDistanceTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -339,7 +351,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.NeptuneFurthestDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests.NeptuneFurthestDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
@@ -348,7 +360,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="METHOD_NAME" value="NeptuneFurthestDistanceTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -360,7 +372,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.TableQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests.TableQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
@@ -369,7 +381,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="METHOD_NAME" value="TableQuantityTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -394,11 +406,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebTestSuite.NeptuneFurthestDistanceTest" />
-        <item itemvalue="JUnit.WebTestSuite.JupiterDistanceTest" />
-        <item itemvalue="JUnit.WebTestSuite" />
-        <item itemvalue="JUnit.WebTestSuite.TableQuantityTest" />
-        <item itemvalue="JUnit.WebTestSuite.FormsErrorMsgTest" />
+        <item itemvalue="JUnit.WebTests.NeptuneFurthestDistanceTest" />
+        <item itemvalue="JUnit.WebTests.JupiterDistanceTest" />
+        <item itemvalue="JUnit.WebTests" />
+        <item itemvalue="JUnit.WebTests.TableQuantityTest" />
+        <item itemvalue="JUnit.WebTests.FormsErrorMsgTest" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633057316983</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add distanceMatch matching strategy">
+      <created>1633057547150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633057547150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -546,7 +565,8 @@
     <MESSAGE value="add Ui model, JupiterDistanceTest" />
     <MESSAGE value="add matching strategy and planet tile ui model refactor&#10;add find planet by name, radius" />
     <MESSAGE value="add neptune is furthest test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add neptune is furthest test" />
+    <MESSAGE value="add distanceMatch matching strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add distanceMatch matching strategy" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

@@ -1,0 +1,4 @@
+com\accesshq\tests\BaseTestSuite.class
+com\accesshq\tests\WebTests.class
+com\accesshq\strategies\DistanceMatch.class
+com\accesshq\tests\PlanetTests.class

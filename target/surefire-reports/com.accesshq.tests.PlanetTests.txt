@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.accesshq.tests.PlanetTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.726 s - in com.accesshq.tests.PlanetTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.333 s - in com.accesshq.tests.PlanetTests

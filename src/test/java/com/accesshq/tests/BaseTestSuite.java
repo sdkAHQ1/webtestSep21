@@ -13,7 +13,8 @@ public class BaseTestSuite {
 
     @BeforeEach
     public void Setup() throws MalformedURLException {
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
+        // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
+        driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), new ChromeOptions());
         // driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://d18u5zoaatmpxx.cloudfront.net/#/");
         driver.manage().window().maximize();

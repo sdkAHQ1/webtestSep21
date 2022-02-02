@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.accesshq.tests.WebTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.438 s - in com.accesshq.tests.WebTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.484 s - in com.accesshq.tests.WebTests

@@ -6,18 +6,12 @@ import com.accesshq.ui.FormsPage;
 import com.accesshq.ui.HomePage;
 import com.accesshq.ui.PlanetTile;
 import com.accesshq.ui.PlanetsPage;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
 
 public class PlanetTests extends BaseTestSuite {
 
@@ -29,7 +23,7 @@ public class PlanetTests extends BaseTestSuite {
         var planetsPage = new PlanetsPage(driver);
 
         // act - find planet tile by name
-        PlanetTile planet = planetsPage.getPlanetTile(new NameMatch("Jupiter"));
+        PlanetTile planet = planetsPage.getPlanetTile(new NameMatch("Jupiter"));  // getPlanetTile(new MatchingStrategy)
 
         // lambda predicate
         PlanetTile planet2 = planetsPage.getPlanetTilePred(planetTile -> planetTile.getName().contains("Jupiter"));
@@ -74,7 +68,7 @@ public class PlanetTests extends BaseTestSuite {
                 planetTile -> planetTile.getDistanceAsNumber()== furthest);
 
         // assert that planet with furthest distance is neptune
-        Assertions.assertEquals("Neptune", furthestPlanet.getName());
+        Assertions.assertEquals("Uranus", furthestPlanet.getName());
 
     }
 

@@ -63,4 +63,21 @@ public class FormsPage {
             throw (new NotFoundException());
         }
     }
+
+    private void clickButton(String buttonText) {
+        WebElement btn = null;
+        var buttons = driver.findElements(By.tagName("button"));
+        for (WebElement button: buttons) {
+            if (button.getText().equalsIgnoreCase(buttonText)) {
+                btn = button;
+                break;
+            }
+        }
+        if (btn != null) {
+            btn.click();
+        }
+        else {
+            throw (new NotFoundException());
+        }
+    }
 }

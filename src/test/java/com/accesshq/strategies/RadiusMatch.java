@@ -12,9 +12,9 @@ public class RadiusMatch implements MatchingStrategy {
     }
 
     @Override
-    public boolean match(PlanetTile planet)
+    public boolean match(PlanetTile planetTile)
     {
-        if (planet.getRadius().equalsIgnoreCase(radius)) {
+        if (planetTile.getRadius().equalsIgnoreCase(radius)) {
             return true;
         }
         return false;

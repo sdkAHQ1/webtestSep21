@@ -7,8 +7,8 @@ public class PlanetTile {
 
     private WebElement thisElement;
 
-    public PlanetTile(WebElement ele) {
-        this.thisElement = ele;
+    public PlanetTile(WebElement elem) {
+        this.thisElement = elem;
     }
 
     public String getName() {

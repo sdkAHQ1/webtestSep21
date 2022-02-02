@@ -1,4 +1,14 @@
 com\accesshq\tests\BaseTestSuite.class
+com\accesshq\strategies\RadiusMatch.class
 com\accesshq\tests\WebTests.class
+com\accesshq\ui\PlanetTile.class
+com\accesshq\ui\FormsPage.class
 com\accesshq\strategies\DistanceMatch.class
 com\accesshq\tests\PlanetTests.class
+com\accesshq\ui\HomePage.class
+com\accesshq\ui\VicRoadsPermitPage.class
+com\accesshq\tests\VicRoadsBaseTestSuite.class
+com\accesshq\strategies\NameMatch.class
+com\accesshq\tests\VicRoadsTests.class
+com\accesshq\ui\PlanetsPage.class
+com\accesshq\strategies\MatchingStrategy.class

@@ -28,6 +28,39 @@ public class PlanetsPage {
         throw new NotFoundException("planet not found");
     }
 
+    public PlanetTile getPlanetTileByName(String name) {
+        var planetTiles = driver.findElements(By.className("planet"));
+        for (WebElement tile : planetTiles) {
+            PlanetTile planet = new PlanetTile(tile);
+            if (planet.getName().equalsIgnoreCase(name)) {
+                return planet;
+            }
+        }
+        throw new NotFoundException("planet not found");
+    }
+
+    public PlanetTile getPlanetTileByRadius(String radius) {
+        var planetTiles = driver.findElements(By.className("planet"));
+        for (WebElement tile : planetTiles) {
+            PlanetTile planet = new PlanetTile(tile);
+            if (planet.getRadius().equalsIgnoreCase(radius)) {
+                return planet;
+            }
+        }
+        throw new NotFoundException("planet not found");
+    }
+
+    public PlanetTile getPlanetTileByDistance(double distance) {
+        var planetTiles = driver.findElements(By.className("planet"));
+        for (WebElement tile : planetTiles) {
+            PlanetTile planet = new PlanetTile(tile);
+            if (planet.getDistanceAsNumber() == distance) {
+                return planet;
+            }
+        }
+        throw new NotFoundException("planet not found");
+    }
+
     public PlanetTile getPlanetTilePred(Predicate<PlanetTile> predicate) {
         var planetTiles = driver.findElements(By.className("planet"));
         for (WebElement tile : planetTiles) {

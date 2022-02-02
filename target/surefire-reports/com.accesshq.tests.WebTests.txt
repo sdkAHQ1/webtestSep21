@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.accesshq.tests.WebTests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.299 s <<< FAILURE! - in com.accesshq.tests.WebTests
-FormsErrorMsgTest  Time elapsed: 11.707 s  <<< ERROR!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PC12333', ip: '192.168.86.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bMB9uH}, goog:chromeOptions: {debuggerAddress: localhost:43815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 744c25dc1975d68958091113c49...}
-Session ID: 744c25dc1975d68958091113c490e7d5
-	at com.accesshq.tests.PlanetTests.FormsErrorMsgTest(PlanetTests.java:89)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.438 s - in com.accesshq.tests.WebTests

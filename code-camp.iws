@@ -5,14 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsBaseTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/VicRoadsPermitPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/DistanceMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/DistanceMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/code-camp-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTestSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/WebTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,9 +285,9 @@
       <recent name="com.accesshq.tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.accesshq.ui" />
       <recent name="com.accesshq.tests" />
       <recent name="com.accesshq.strategies" />
-      <recent name="com.accesshq.ui" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.WebTests">
@@ -293,6 +307,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlanetTests.NeptuneFurthestDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.PlanetTests" />
+      <option name="METHOD_NAME" value="NeptuneFurthestDistanceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VicRoadsTests.CreditCardFormAccessible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.VicRoadsTests" />
+      <option name="METHOD_NAME" value="CreditCardFormAccessible" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
@@ -304,27 +360,6 @@
       <option name="PACKAGE_NAME" value="com.accesshq.tests" />
       <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTests.FormsErrorMsgTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
-      <option name="METHOD_NAME" value="FormsErrorMsgTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -376,27 +411,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTests.TableQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.WebTests" />
-      <option name="METHOD_NAME" value="TableQuantityTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -410,11 +424,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTests" />
+        <item itemvalue="JUnit.PlanetTests.NeptuneFurthestDistanceTest" />
+        <item itemvalue="JUnit.VicRoadsTests.CreditCardFormAccessible" />
         <item itemvalue="JUnit.WebTests.NeptuneFurthestDistanceTest" />
         <item itemvalue="JUnit.WebTests.JupiterDistanceTest" />
-        <item itemvalue="JUnit.WebTests" />
-        <item itemvalue="JUnit.WebTests.TableQuantityTest" />
-        <item itemvalue="JUnit.WebTests.FormsErrorMsgTest" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633316081206</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml">
+      <created>1633324540950</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1633324540950</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">

@@ -12,9 +12,9 @@ public class DistanceMatch implements MatchingStrategy {
     }
 
     @Override
-    public boolean match(PlanetTile planet)
+    public boolean match(PlanetTile planetTile)
     {
-        if (planet.getDistanceAsNumber() == distance) {
+        if (planetTile.getDistanceAsNumber() == distance) {
             return true;
         }
         return false;

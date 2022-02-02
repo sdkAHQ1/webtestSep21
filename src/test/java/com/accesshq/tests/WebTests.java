@@ -1,20 +1,10 @@
 package com.accesshq.tests;
 
-import com.accesshq.strategies.NameMatch;
-import com.accesshq.strategies.RadiusMatch;
 import com.accesshq.ui.FormsPage;
 import com.accesshq.ui.HomePage;
-
-import com.accesshq.ui.PlanetTile;
-import com.accesshq.ui.PlanetsPage;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class WebTests extends BaseTestSuite {
 
@@ -31,15 +21,6 @@ public class WebTests extends BaseTestSuite {
         Assertions.assertEquals("Your name is required", formsPage.getNameErrorMessage());
         Assertions.assertEquals("Your email is required",formsPage.getEmailErrorMessage());
         Assertions.assertEquals("You must agree to continue", formsPage.getAcceptErrorMessage());
-
-    }
-
-    @Test
-    public void JetBrainsTest()
-    {
-        // arrange - we've setup the jetbrains code with me
-
-        // act - I'm
 
     }
 

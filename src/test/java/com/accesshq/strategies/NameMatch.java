@@ -1,8 +1,6 @@
 package com.accesshq.strategies;
 
 import com.accesshq.ui.PlanetTile;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class NameMatch implements MatchingStrategy {
 
@@ -14,9 +12,9 @@ public class NameMatch implements MatchingStrategy {
     }
 
     @Override
-    public boolean match(PlanetTile planet)
+    public boolean match(PlanetTile planetTile)
     {
-        if (planet.getName().equalsIgnoreCase(name)) {
+        if (planetTile.getName().equalsIgnoreCase(name)) {
             return true;
         }
         return false;

@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_2_06_2022_2_48_pm_[Changes]" date="1654145316188" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_2_06_2022_2_48_pm_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2/06/2022 2:48 pm [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/accesshq/ui/PlanetsPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/accesshq/ui/PlanetsPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_2_06_2022_2_48_pm_[Changes]/PlanetsPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/accesshq/tests/PlanetTests.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/accesshq/tests/PlanetTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_2_06_2022_2_48_pm_[Changes]/PlanetTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/accesshq/tests/BaseTestSuite.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/accesshq/tests/BaseTestSuite.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_2_06_2022_2_48_pm_[Changes]/BaseTestSuite.class" />
+  </binary>
+</changelist>

@@ -15,7 +15,7 @@ public class PlanetTile {
         return thisElement.findElement(By.className("name")).getText();
     }
 
-    public String getDistance() {
+    public String getDistanceAsString() {
         return thisElement.findElement(By.className("distance")).getText();
     }
 

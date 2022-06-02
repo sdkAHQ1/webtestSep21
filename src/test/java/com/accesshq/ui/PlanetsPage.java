@@ -29,8 +29,8 @@ public class PlanetsPage {
     }
 
     public PlanetTile getPlanetTileByName(String name) {
-        var planetTiles = driver.findElements(By.className("planet"));
-        for (WebElement tile : planetTiles) {
+        var tiles = driver.findElements(By.className("planet"));
+        for (WebElement tile : tiles) {
             PlanetTile planet = new PlanetTile(tile);
             if (planet.getName().equalsIgnoreCase(name)) {
                 return planet;

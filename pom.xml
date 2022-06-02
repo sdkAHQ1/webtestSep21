@@ -70,7 +70,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <excludedGroups>${excluded-groups}</excludedGroups>
 					<properties>
 						<configurationParameters>
 							junit.jupiter.execution.parallel.enabled = true

@@ -1,5 +1,6 @@
 package com.accesshq.tests;
 
+import com.accesshq.strategies.DistanceMatch;
 import com.accesshq.strategies.NameMatch;
 import com.accesshq.strategies.RadiusMatch;
 import com.accesshq.ui.FormsPage;
@@ -34,6 +35,8 @@ public class PlanetTests extends BaseTestSuite {
 
         // act - find planet tile by radius
         planet = planetsPage.getPlanetTile(new RadiusMatch("69,911 km"));
+
+        planet = planetsPage.getPlanetTile(new DistanceMatch(778500000)); // distance for jupiter
 
         // lambda predicate
         planet2 = planetsPage.getPlanetTilePred(planetTile -> planetTile.getRadius().contains("69,911 km"));

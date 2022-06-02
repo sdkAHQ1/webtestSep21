@@ -26,12 +26,12 @@ public class PlanetTests extends BaseTestSuite {
         // act - find planet tile by name
         PlanetTile planet = planetsPage.getPlanetTile(new NameMatch("Jupiter"));  // getPlanetTile(new MatchingStrategy)
 
-        // lambda predicate
+        // lambda predicate version
         PlanetTile planet2 = planetsPage.getPlanetTilePred(planetTile -> planetTile.getName().contains("Jupiter"));
 
         // assert - distance to jupiter is
-        Assertions.assertEquals("778,500,000 km", planet.getDistance());
-        Assertions.assertEquals("778,500,000 km", planet2.getDistance());
+        Assertions.assertEquals("778,500,000 km", planet.getDistanceAsString());
+        Assertions.assertEquals("778,500,000 km", planet2.getDistanceAsString());
 
         // act - find planet tile by radius
         planet = planetsPage.getPlanetTile(new RadiusMatch("69,911 km"));

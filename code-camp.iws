@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml">
+    <list default="true" id="c26da324-4661-415f-9ebd-5639ddc7cdaa" name="Changes" comment="initial commit of webtests and ui modelling">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/MatchingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/NameMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/strategies/RadiusMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/BaseTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/PlanetTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsBaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsBaseTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/VicRoadsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/FormsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/PlanetsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/VicRoadsPermitPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/VicRoadsPermitPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.PlanetTests.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.accesshq.tests.WebTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.PlanetTests.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.accesshq.tests.WebTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/PlanetTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/tests/PlanetTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/ui/PlanetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/ui/PlanetsPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +198,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HierarchyBrowserManager">
     <option name="SHOW_PACKAGES" value="false" />
@@ -524,7 +539,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633324540950</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated tests in planet tests, plus changes to support remote webdriver">
+      <created>1654145406611</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654145406611</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated tests in planet tests, plus changes to support remote webdriver">
+      <created>1654145433123</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654145433123</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -583,7 +612,9 @@
     <MESSAGE value="add neptune is furthest test" />
     <MESSAGE value="add distanceMatch matching strategy" />
     <MESSAGE value="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor webtestsuite into webtests and planettests&#10;change pom to allow mvn test to be run from cml" />
+    <MESSAGE value="updated tests in planet tests, plus changes to support remote webdriver" />
+    <MESSAGE value="initial commit of webtests and ui modelling" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit of webtests and ui modelling" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

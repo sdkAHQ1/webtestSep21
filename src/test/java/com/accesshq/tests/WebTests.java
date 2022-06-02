@@ -14,14 +14,11 @@ public class WebTests extends BaseTestSuite {
         // arrange - click on forms menu item to navigate to Forms page
         new HomePage(driver).navigateToFormsPage();
         var formsPage = new FormsPage(driver);
-
         formsPage.clickSubmitButton();
-
         // assert - error messages are correct
         Assertions.assertEquals("Your name is required", formsPage.getNameErrorMessage());
         Assertions.assertEquals("Your email is required",formsPage.getEmailErrorMessage());
         Assertions.assertEquals("You must agree to continue", formsPage.getAcceptErrorMessage());
-
     }
 
     @Test

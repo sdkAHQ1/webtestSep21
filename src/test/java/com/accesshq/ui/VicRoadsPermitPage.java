@@ -8,7 +8,7 @@ import java.util.List;
 
 public class VicRoadsPermitPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public VicRoadsPermitPage(WebDriver driver)
     {

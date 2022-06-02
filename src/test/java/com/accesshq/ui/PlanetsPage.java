@@ -61,6 +61,7 @@ public class PlanetsPage {
         throw new NotFoundException("planet not found");
     }
 
+    // predicate version
     public PlanetTile getPlanetTilePred(Predicate<PlanetTile> predicate) {
         var planetTiles = driver.findElements(By.className("planet"));
         for (WebElement tile : planetTiles) {

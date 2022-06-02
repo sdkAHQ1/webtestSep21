@@ -4,7 +4,7 @@ import com.accesshq.ui.PlanetTile;
 
 public class NameMatch implements MatchingStrategy {
 
-    String name;
+    private String name;
 
     public NameMatch(String name)
     {

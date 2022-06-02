@@ -19,6 +19,7 @@ public class VicRoadsTests extends VicRoadsBaseTestSuite {
         // assert - credit card form can be selected
         Assertions.assertTrue(vicRoadsPaymentPage.isHeader("get an unregistered vehicle permit"));
         Assertions.assertTrue(vicRoadsPaymentPage.isCreditCardFormAccessible());
-    } */
+    }
+    */
 
 }

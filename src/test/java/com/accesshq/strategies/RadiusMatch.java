@@ -4,7 +4,7 @@ import com.accesshq.ui.PlanetTile;
 
 public class RadiusMatch implements MatchingStrategy {
 
-    String radius;
+    private String radius;
 
     public RadiusMatch(String radius)
     {

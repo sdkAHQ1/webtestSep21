@@ -25,7 +25,8 @@ public class HomePage {
         menuButton.click();
     }
 
-    public String getHomePageHeading() {
+    public String getHomePageHeading()
+    {
         return driver.findElement(By.cssSelector("h1.display-1")).getText();
     }
 

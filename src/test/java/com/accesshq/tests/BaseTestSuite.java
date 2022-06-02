@@ -16,7 +16,7 @@ public class BaseTestSuite {
     public void Setup() throws MalformedURLException {
         // run via localhost against selenium grid if running through IDE
         ChromeOptions chromeOptions = new ChromeOptions();
-       // chromeOptions.setCapability("browserVersion", "102.0.5005.63");
+        chromeOptions.setCapability("browserVersion", "102.0.5005.63");
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
 
         // driver = new RemoteWebDriver(new URL("http://172.18.0.2:4444/wd/hub"), new ChromeOptions());

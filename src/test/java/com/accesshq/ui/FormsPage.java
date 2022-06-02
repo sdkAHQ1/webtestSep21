@@ -46,7 +46,6 @@ public class FormsPage {
         return driver.findElement(By.cssSelector("[class='v-snack__content']")).isDisplayed();
     }
 
-
     public void clickSubmitButton() {
         WebElement submitButton = null;
         var buttons = driver.findElements(By.tagName("button"));
